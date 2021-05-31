@@ -1,7 +1,9 @@
 <template>
   <div class="ly_page_inner">
     <header class="bl_header">
-      <h1 class="bl_header_ttl">WP <span>Jobs</span></h1>
+      <h1 class="bl_header_ttl">
+        <a href="/jobs">WP <span>Jobs</span></a>
+      </h1>
     </header>
     <Nuxt />
   </div>
@@ -26,6 +28,10 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
+a {
+  text-decoration: none;
+  color: #000;
+}
 body {
   background-color: #f6f7fb;
 }
@@ -35,10 +41,10 @@ body {
 }
 
 .bl_header {
-  color: #282538;
   padding: 2rem 0;
   &_ttl {
     font-weight: 700;
+    color: #282538;
     span {
       font-weight: 400;
     }
