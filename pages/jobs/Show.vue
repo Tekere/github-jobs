@@ -1,5 +1,7 @@
 <template>
-  <div class="container"></div>
+  <div class="container">
+    <div class="bl_job"></div>
+  </div>
 </template>
 
 <script>
