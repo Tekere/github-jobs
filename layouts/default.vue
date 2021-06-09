@@ -2,7 +2,7 @@
   <div class="ly_page_inner">
     <header class="bl_header">
       <h1 class="bl_header_ttl">
-        <a href="/jobs">WP <span>Jobs</span></a>
+        <a href="/jobs">GitHub <span>Jobs</span></a>
       </h1>
     </header>
     <Nuxt />

@@ -1,4 +1,4 @@
-# wp-jobs
+#github-jobs
 
 ## Build Setup
 

@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'wp-jobs',
+    title: 'github-jobs',
     htmlAttrs: {
       lang: 'en',
     },
