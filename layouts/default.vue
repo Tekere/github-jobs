@@ -32,8 +32,12 @@ a {
   text-decoration: none;
   color: #000;
 }
+input:focus {
+  outline: none;
+}
 body {
   background-color: #f6f7fb;
+  box-sizing: border-box;
 }
 .ly_page_inner {
   max-width: 1200px;
