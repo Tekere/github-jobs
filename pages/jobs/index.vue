@@ -74,6 +74,7 @@
           <!-- ./ bl_card -->
         </div>
         <!-- ./ bl_card_unit -->
+        <div class="bl_pagination"></div>
       </div>
       <!-- ./ ly_mainCont -->
     </div>
