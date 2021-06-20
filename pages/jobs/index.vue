@@ -17,7 +17,7 @@
       <!-- ./ ly_sideCont -->
       <div class="ly_mainCont">
         <div class="bl_card_unit">
-          <Card v-for="n of 5" :key="n"></Card>
+          <Card v-for="n of 5" :id="n" :key="n"></Card>
         </div>
         <div class="bl_pagination"></div>
       </div>

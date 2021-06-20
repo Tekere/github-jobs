@@ -11,7 +11,9 @@
           </p>
         </div>
       </div>
-      <div class="ly_mainCont"></div>
+      <div class="ly_mainCont">
+        <h2 class="el_ttl">Front-End Software Engineer</h2>
+      </div>
     </div>
   </main>
 </template>

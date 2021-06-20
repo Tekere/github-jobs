@@ -1,5 +1,5 @@
 <template>
-  <a href="" class="bl_card">
+  <a :href="'/jobs/show/' + id" class="bl_card">
     <div class="bl_card_img">
       <img src="" alt="" />
     </div>
@@ -20,5 +20,12 @@
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    id: {
+      type: Number,
+      required: true,
+    },
+  },
+}
 </script>
