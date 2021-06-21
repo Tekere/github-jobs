@@ -1,10 +1,18 @@
 #github-jobs
 
-,{
+:id 付与
+{
 path: '/:catchAll(.\*)',
 redirect: '/jobs',
 }
 
-## mixins を default.vue に定義しても、index.vue で使えない？
+app.template.html の<head>に書く
 
-どういうふうにアセットされているか調査する必要あり
+```
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+```
+
+# まとめ
+
+CSS 設計 PRECSS
+router.js

@@ -8,7 +8,7 @@
       <h4 class="bl_card_typeOfWork">Front-End Software Engineer</h4>
       <div class="bl_card_subInfo">
         <div class="bl_card_subInfo_left">
-          <p class="bl_card_tag">FullTime</p>
+          <p class="bl_card_tag el_tag">FullTime</p>
         </div>
         <div class="bl_card_subInfo_right">
           <p class="bl_card_address">New York</p>

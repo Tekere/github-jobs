@@ -1,15 +1,19 @@
 <template>
   <div class="ly_page_inner">
-    <header class="bl_header">
+    <header class="ly_header">
       <h1 class="bl_header_ttl">
         <a href="/jobs">GitHub <span>Jobs</span></a>
       </h1>
     </header>
     <Nuxt />
+    <footer class="ly_footer">
+      <p>created by tekere - devChallenges.io</p>
+    </footer>
   </div>
 </template>
 <script>
 import '@/assets/style.scss'
+
 const width = window.screen.width || window.innerWidth
 const viewport = document.querySelector('[name="viewport"]')
 if (viewport) {

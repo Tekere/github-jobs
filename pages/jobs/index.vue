@@ -1,5 +1,5 @@
 <template>
-  <main class="job_index">
+  <main id="job_index">
     <div class="ly_fv bl_search">
       <div class="bl_search_form hp__position_center">
         <input
@@ -17,7 +17,7 @@
       <!-- ./ ly_sideCont -->
       <div class="ly_mainCont">
         <div class="bl_card_unit">
-          <Card v-for="n of 5" :id="n" :key="n"></Card>
+          <Card v-for="n of jobs" :id="n" :key="n"></Card>
         </div>
         <div class="bl_pagination"></div>
       </div>
@@ -29,10 +29,18 @@
 <script>
 import SideBar from '@/components/SideBar.vue'
 import Card from '@/components/Card.vue'
+import { mapState } from 'vuex'
+// import { mapState, mapMutations, mapActions } from 'vuex'
 export default {
   components: {
     SideBar,
     Card,
+  },
+  // computed
+  computed: {
+    ...mapState({
+      jobs: (state) => state.jobs.jobs,
+    }),
   },
 }
 </script>
