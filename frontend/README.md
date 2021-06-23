@@ -1,7 +1,7 @@
 #github-jobs
 
 :id 付与
-{
+,{
 path: '/:catchAll(.\*)',
 redirect: '/jobs',
 }
