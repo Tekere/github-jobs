@@ -13,7 +13,7 @@
 </template>
 <script>
 import '@/assets/style.scss'
-
+import { mapActions } from 'vuex'
 const width = window.screen.width || window.innerWidth
 const viewport = document.querySelector('[name="viewport"]')
 if (viewport) {
@@ -33,5 +33,16 @@ if (viewport) {
   }
 }
 
-export default {}
+export default {
+  data() {
+    return {}
+  },
+  methods: {
+    ...mapActions('jobs', ['getJobs']),
+  },
+  created() {
+    this.getJobs()
+    // .then((this.show = true))
+  },
+}
 </script>

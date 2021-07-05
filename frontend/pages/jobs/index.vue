@@ -17,10 +17,10 @@
       <!-- ./ ly_sideCont -->
       <div class="ly_mainCont">
         <div class="bl_card_unit">
-          <Card v-for="n of jobs" :id="n" :key="n"></Card>
+          <Card v-for="job of jobs" :id="job.id" :key="job.id"></Card>
         </div>
         <div class="bl_pagination">
-          {{ dat[0].id }}
+          <!--  -->
         </div>
       </div>
       <!-- ./ ly_mainCont -->
@@ -29,11 +29,10 @@
   </main>
 </template>
 <script>
-import axios from 'axios'
 import SideBar from '@/components/SideBar.vue'
 import Card from '@/components/Card.vue'
 import { mapState } from 'vuex'
-// import { mapState, mapMutations, mapActions } from 'vuex'
+
 export default {
   components: {
     SideBar,
@@ -41,7 +40,7 @@ export default {
   },
   data() {
     return {
-      dat: {},
+      //
     }
   },
   // computed
@@ -49,16 +48,6 @@ export default {
     ...mapState({
       jobs: (state) => state.jobs.jobs,
     }),
-  },
-  mounted() {
-    axios
-      .get(
-        'http://ec2-3-115-25-4.ap-northeast-1.compute.amazonaws.com/wp-json/wp/v2/posts'
-      )
-      .then((res) => {
-        this.dat = res.data
-        console.log(res.data)
-      })
   },
 }
 </script>
