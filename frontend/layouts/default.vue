@@ -38,11 +38,10 @@ export default {
     return {}
   },
   methods: {
-    ...mapActions('jobs', ['getJobs']),
+    ...mapActions('jobs', ['fetchJobs']),
   },
   created() {
-    this.getJobs()
-    // .then((this.show = true))
+    this.fetchJobs()
   },
 }
 </script>

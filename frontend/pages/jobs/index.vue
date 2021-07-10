@@ -17,7 +17,7 @@
       <!-- ./ ly_sideCont -->
       <div class="ly_mainCont">
         <div class="bl_card_unit">
-          <Card v-for="job of jobs" :id="job.id" :key="job.id"></Card>
+          <Card v-for="job of jobs" :key="job.id" :job="job"></Card>
         </div>
         <div class="bl_pagination">
           <!--  -->
@@ -31,7 +31,7 @@
 <script>
 import SideBar from '@/components/SideBar.vue'
 import Card from '@/components/Card.vue'
-import { mapState } from 'vuex'
+import { mapGetters } from 'vuex'
 
 export default {
   components: {
@@ -45,9 +45,7 @@ export default {
   },
   // computed
   computed: {
-    ...mapState({
-      jobs: (state) => state.jobs.jobs,
-    }),
+    ...mapGetters('jobs', ['jobs']),
   },
 }
 </script>
