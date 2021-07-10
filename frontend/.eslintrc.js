@@ -15,6 +15,7 @@ module.exports = {
   plugins: [],
   // add your custom rules here
   rules: {
-    'no-unused-vars': 'off',
+    'no-unused-vars': 'off', // 宣言した変数を未使用でも許可
+    camelcase: 'off', //キャメルケース以外の命名も許す
   },
 }
