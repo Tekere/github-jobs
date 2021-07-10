@@ -1,0 +1,8 @@
+{
+	"scripts": {
+		"start": "browser-sync start --proxy localhost:8000"
+	},
+	"dependencies": {
+		"browser-sync": "^2.27.4"
+	}
+}
