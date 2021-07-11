@@ -16,7 +16,7 @@ export const getters = {
         date,
         company: custom_fields.company_name[0],
         office: custom_fields.office[0],
-        isFulltime: custom_fields.is_Fulltime[0] === '1' ? true : false,
+        isFulltime: custom_fields.is_Fulltime[0] === '1',
       }
     })
 

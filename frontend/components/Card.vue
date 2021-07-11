@@ -1,7 +1,8 @@
 <template>
   <a :href="'/jobs/show/' + job.id" class="bl_card">
     <div class="bl_card_img">
-      <img src="" alt="" />
+      <img v-if="job.eyeCatch" src="" alt="" />
+      <img v-else src="@/assets/noimage.png" alt="" />
     </div>
     <div class="bl_card_cont">
       <h4 class="bl_card_companyName">Lev</h4>
